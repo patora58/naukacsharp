@@ -10,9 +10,10 @@ namespace n02_hello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("podaj imie: ");
+            Console.Write ("podaj imie: ");
             string imie = Console.ReadLine();
-            Console.WriteLine("witaj," + imie);
+            Console.WriteLine();
+            Console.WriteLine("Witaj, " + imie+"!");
             Console.ReadLine();
 
         }
