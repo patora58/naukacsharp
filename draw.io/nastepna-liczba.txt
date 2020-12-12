@@ -1,0 +1,64 @@
+double
+
+	3	3.0 / 2.0 =>  1.5
+	4	4.0 / 2.0 =>  2.0
+	5	5.0 / 2.0 =>  2.5
+	6	6.0 / 2.0 =>  3.0
+
+int
+
+	3	3 / 2 =>  1	3 % 2 =>  1	liczba % 2 == 1   ---  liczba nieparzysta
+	4	4 / 2 =>  2	4 % 2 =>  0
+	5	5 / 2 =>  2	5 % 2 =>  1
+	6	6 / 2 =>  3	6 % 2 =>  0	liczba % 2 == 0   ---  liczba parzysta
+	7	7 / 2 =>  3	7 % 2 =>  1
+	8	8 / 2 =>  4	8 % 2 =>  0	dla "int" operator:    "/" - dzielenie całkowite
+	9	9 / 2 =>  4	9 % 2 =>
+
+static int NastepnaNieparzysta(int liczba)
+{
+	int wynik = liczba;    // "=" przypisanie do lewej strony wyrażenia z prawej strony
+
+	// sprawdzenie czy "liczba" jest parzysta
+	if (liczba % 2 == 0)  // "==" porównanie  (efektem jest wyrażenie logiczne "true"/"false")
+	{
+		wynik = wynik + 1;
+	}
+	else
+	{
+		wynik = wynik + 2;
+	}
+
+	return wynik;
+}
+
+
+
+
+static int NastepnaNieparzysta(int liczba)
+{
+	int wynik = liczba;
+
+	// sprawdzenie czy "liczba" jest parzysta
+	if (liczba % 2 == 0)
+	    wynik = wynik + 1;
+	else
+	    wynik = wynik + 2;
+
+	return wynik;
+}
+
+
+
+
+static int NastepnaNieparzysta(int liczba)
+{
+	int wynik = liczba; if (liczba % 2 == 0) wynik = wynik + 1; else wynik = wynik + 2; return wynik;
+}
+
+
+
+
+
+
+
