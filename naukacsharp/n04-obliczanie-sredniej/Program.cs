@@ -34,24 +34,21 @@ namespace n04_obliczanie_sredniej
             int liczba3;
             int liczba4;
 
-            Console.Write("Podaj 1 liczbe: ");
-            string str1 = Console.ReadLine();
-            liczba1 = Convert.ToInt32(str1);
-
-            Console.Write("Podaj 2 liczbe: ");
-            string str2 = Console.ReadLine();
-            liczba2 = Convert.ToInt32(str2);
-
-            Console.Write("Podaj 3 liczbe: ");
-            string str3 = Console.ReadLine();
-            liczba3 = Convert.ToInt32(str3);
-
-            Console.Write("Podaj 4 liczbe: ");
-            string str4 = Console.ReadLine();
-            liczba4 = Convert.ToInt32(str4);
+            liczba1 = WczytajInt("1 liczbe");
+            liczba2 = WczytajInt("2 liczbe");
+            liczba3 = WczytajInt("3 liczbe");
+            liczba4 = WczytajInt("4 liczbe");
 
             double srednia = (liczba1 + liczba2 + liczba3 + liczba4) / 4.0;
             Console.WriteLine("Srednia liczb = " + srednia);
+        }
+
+        private static int WczytajInt(string opis)
+        {
+            Console.Write("Podaj " + opis + ": ");
+            string str = Console.ReadLine();
+            int wczytana = int.Parse(str);
+            return wczytana;
         }
     }
 }
