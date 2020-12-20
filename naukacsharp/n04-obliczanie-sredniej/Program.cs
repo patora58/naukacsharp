@@ -8,10 +8,62 @@ namespace n04_obliczanie_sredniej
         {
             Console.WriteLine("OBLICZANIE ŚREDNIEJ");
 
-            ProstaKonwersjaLiczbNapisow();
-            CzteryLiczbySrednia();
+            //ProstaKonwersjaLiczbNapisow();
+            //CzteryLiczbySrednia();
+
+            SredniaCiaguLiczbZakonczonychZerem();
 
             Console.ReadLine();
+        }
+
+        // 0. Potrzebne: suma oraz ilość wczytywanych liczb
+        // 1. Pętla czytająca kolejną liczbę
+        // 2. Jeśli wczytane zero, koniec pętli
+        // 3. W przeciwnym przypadku: sumowanie wczytanej liczby z dotychczasowymi
+        // 4. Zwiększenie licznika wczytanych liczb
+        // 5. Po zakończeniu pętli: obliczenie i wyświetlenie średniej
+        // 5* Co jeśli ilość wczytanych liczb jest równa zero???
+
+        // 3 4 0        => 3.5
+        // 4 6 0        => 5.0
+        // 2 0          => 2.0
+        // 1 2 3 4 5    => 3.0
+        // 0            => ? (INFINITY) NaN => Not A Number
+        private static void SredniaCiaguLiczbZakonczonychZerem()
+        {
+            // 0.
+            int suma = 0;
+            int ilosc = 0;
+            int liczba = 0;
+
+            // for   do..while   while    foreach
+            do
+            {
+                // 1.
+                liczba = WczytajInt("ciag liczb zakonczony '0'");
+                // 2.
+                if (liczba == 0)
+                    break;
+                else
+                {
+                    // 3.
+                    suma = suma + liczba;
+                    // 4.
+                    ilosc = ilosc + 1;
+                }
+            } while (liczba != 0);
+
+            // 5.
+            if (ilosc > 0)
+            {
+                double srednia = (suma * 1.0) / ilosc;
+                Console.WriteLine("Srednia liczb = " + srednia);
+            }
+            else
+            {
+                // 5*
+                Console.WriteLine("Podano pusty ciag liczb");
+            }
         }
 
         private static void ProstaKonwersjaLiczbNapisow()
