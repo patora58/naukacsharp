@@ -37,19 +37,21 @@ namespace n04_obliczanie_sredniej
             int liczba = 0;
 
             // for   do..while   while    foreach
-            do
+            while (true)   // pętla nieskończona
             {
                 // 1.
                 liczba = WczytajInt("ciag liczb zakonczony '0'");
                 // 2.
-                if (liczba != 0)
+                if (liczba == 0)  // warunek stopu pętli
+                    break;
+                else
                 {
                     // 3.
                     suma = suma + liczba;
                     // 4.
                     ilosc = ilosc + 1;
                 }
-            } while (liczba != 0);
+            };
 
             // 5.
             if (ilosc > 0)
