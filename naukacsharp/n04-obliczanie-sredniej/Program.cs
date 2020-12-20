@@ -42,9 +42,7 @@ namespace n04_obliczanie_sredniej
                 // 1.
                 liczba = WczytajInt("ciag liczb zakonczony '0'");
                 // 2.
-                if (liczba == 0)
-                    break;
-                else
+                if (liczba != 0)
                 {
                     // 3.
                     suma = suma + liczba;
