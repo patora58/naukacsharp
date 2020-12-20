@@ -11,9 +11,38 @@ namespace n04_obliczanie_sredniej
             //ProstaKonwersjaLiczbNapisow();
             //CzteryLiczbySrednia();
 
-            SredniaCiaguLiczbZakonczonychZerem();
+            //SredniaCiaguLiczbZakonczonychZerem();
+
+            SredniaCiaguLiczbZTablicy();
 
             Console.ReadLine();
+        }
+
+        // 1. Pętla czytająca kolejną liczbę
+        // 2. Jeśli wczytane zero, koniec pętli
+        // 3. W przeciwnym przypadku: zapisaie wczytanej liczby do tablicy
+        // 4. Zwiększenie licznika wczytanych liczb
+        // 5. Po zakończeniu pętli: obliczenie i wyświetlenie średniej
+
+        const int MAXL = 5;
+        private static void SredniaCiaguLiczbZTablicy()
+        {
+            int[] tablica;                  // miejsce (!) na tablicę, domyślnie "null"
+            tablica = new int[MAXL];        // utworzenie tablicy
+
+            // int[] tab = new int[100];    // tab.Length == 100
+
+            // 1. ?
+
+            // 5.
+            ObliczOrazWyswietlSredniaDlaTablicy(tablica);
+        }
+
+        private static void ObliczOrazWyswietlSredniaDlaTablicy(int[] tablica)
+        {
+            // 5. ?
+
+            Console.WriteLine("TODO");
         }
 
         // 0. Potrzebne: suma oraz ilość wczytywanych liczb
