@@ -26,6 +26,7 @@ namespace n05_gwiazdki
     */
     class Program
     {
+        const int Wiersze = 3;
         static void Main(string[] args)
         {
             Console.WriteLine("gwiazdki");
@@ -50,9 +51,9 @@ namespace n05_gwiazdki
         private static void GwiazdkiD()
         {
             int wiersz = 1;
-            while (wiersz <= 4)
+            while (wiersz <= Wiersze)
             {
-                for (int s = 4-wiersz; s > 0; s--)
+                for (int s = Wiersze - wiersz; s > 0; s--)
                     Console.Write(" ");
                 for (int g = 1; g <= wiersz; ++g)
                     Console.Write("*");
@@ -74,11 +75,11 @@ namespace n05_gwiazdki
         private static void GwiazdkiC()
         {
             int wiersz = 1;
-            while (wiersz <= 4)
+            while (wiersz <= Wiersze)
             {
                 for (int s = 1; s < wiersz; s++)
                     Console.Write(" ");
-                for (int g = 4 - wiersz + 1; g >= 1; --g)
+                for (int g = Wiersze - wiersz + 1; g >= 1; --g)
                     Console.Write("*");
                 Console.WriteLine();
                 wiersz++;
@@ -96,9 +97,9 @@ namespace n05_gwiazdki
         private static void GwiazdkiB()
         {
             int wiersz = 1;
-            while (wiersz <= 4)
+            while (wiersz <= Wiersze)
             {
-                for (int g = 4 - wiersz + 1; g >= 1; --g)
+                for (int g = Wiersze - wiersz + 1; g >= 1; --g)
                 {
                     Console.Write("*");
                 }
@@ -121,7 +122,7 @@ namespace n05_gwiazdki
         private static void GwiazdkiA()
         {
             int wiersz = 1;
-            while (wiersz <= 4)
+            while (wiersz <= Wiersze)
             {
                 for (int g = 1; g <= wiersz; ++g)
                 {
