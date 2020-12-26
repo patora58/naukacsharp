@@ -6,7 +6,11 @@ namespace n05_gwiazdki
 {
     public class Gwiazdki
     {
-        const int Wiersze = 3;
+         int Wiersze = 3;
+        public Gwiazdki(int ileWierszy)
+        {
+            this.Wiersze = ileWierszy;
+        }
         /*
        ------------+
      1|   *     D) |

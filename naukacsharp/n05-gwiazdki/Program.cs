@@ -30,7 +30,7 @@ namespace n05_gwiazdki
         static void Main(string[] args)
         {
             Console.WriteLine("gwiazdki");
-            Gwiazdki gw = new Gwiazdki();
+            Gwiazdki gw = new Gwiazdki(3);
             gw.Linia();
             gw.GwiazdkiA();
             gw.Linia();
