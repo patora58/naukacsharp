@@ -32,17 +32,47 @@ namespace n04_obliczanie_sredniej
 
             // int[] tab = new int[100];    // tab.Length == 100
 
-            // 1. ?
 
+            //tablica[0] = 5;
+            // tablica[2] = 6;
+            //int i = 10;
+            //tablica[i] = 9;
+            //tablica[i + 2] = 7;
+
+            //1.
+            int licznik = 0;
+            while (licznik < tablica.Length)
+            {
+                Console.Write("Podaj " + licznik + " liczbe: ");
+                String napis = Console.ReadLine();
+                int liczba = int.Parse(napis);
+
+                //2.
+                if (liczba == 0)
+                    break;
+                //3.
+                tablica[licznik] = liczba;
+                //4.
+                licznik++;
+            }
             // 5.
-            ObliczOrazWyswietlSredniaDlaTablicy(tablica);
+            ObliczOrazWyswietlSredniaDlaTablicy(tablica, licznik);
+
         }
-
-        private static void ObliczOrazWyswietlSredniaDlaTablicy(int[] tablica)
+        
+        private static void ObliczOrazWyswietlSredniaDlaTablicy(int[] tablica, int licznik)
         {
-            // 5. ?
+            // 5. 
+            for (int i = 0; i < licznik; ++i)
+            {
+                Console.WriteLine($"  [{i}] = " + tablica[i]);
+                
 
-            Console.WriteLine("TODO");
+            }
+
+
+         
+           // Console.WriteLine("TODO");     
         }
 
         // 0. Potrzebne: suma oraz ilość wczytywanych liczb
