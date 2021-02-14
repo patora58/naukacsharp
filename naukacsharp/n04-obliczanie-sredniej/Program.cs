@@ -21,29 +21,19 @@ namespace n04_obliczanie_sredniej
         // 1. Pętla czytająca kolejną liczbę
         // 2. Jeśli wczytane zero, koniec pętli
         // 3. W przeciwnym przypadku: zapisaie wczytanej liczby do tablicy
-        // 4. Zwiększenie licznika wczytanych liczb
+        // 4. Zwiększenie ilości wczytanych liczb
         // 5. Po zakończeniu pętli: obliczenie i wyświetlenie średniej
 
         const int MAXL = 5;
         private static void SredniaCiaguLiczbZTablicy()
         {
-            int[] tablica;                  // miejsce (!) na tablicę, domyślnie "null"
-            tablica = new int[MAXL];        // utworzenie tablicy
-
-            // int[] tab = new int[100];    // tab.Length == 100
-
-
-            //tablica[0] = 5;
-            // tablica[2] = 6;
-            //int i = 10;
-            //tablica[i] = 9;
-            //tablica[i + 2] = 7;
+            int[] tablica = new int[MAXL];        // utworzenie tablicy
 
             //1.
-            int licznik = 0;
-            while (licznik < tablica.Length)
+            int ilosc = 0;
+            while (ilosc < tablica.Length)
             {
-                Console.Write("Podaj " + licznik + " liczbe: ");
+                Console.Write("Podaj " + ilosc + " liczbe: ");
                 String napis = Console.ReadLine();
                 int liczba = int.Parse(napis);
 
@@ -51,28 +41,38 @@ namespace n04_obliczanie_sredniej
                 if (liczba == 0)
                     break;
                 //3.
-                tablica[licznik] = liczba;
+                tablica[ilosc] = liczba;
                 //4.
-                licznik++;
+                ilosc++;
             }
             // 5.
-            ObliczOrazWyswietlSredniaDlaTablicy(tablica, licznik);
+            ObliczOrazWyswietlSredniaDlaTablicy(tablica, ilosc);
 
         }
         
-        private static void ObliczOrazWyswietlSredniaDlaTablicy(int[] tablica, int licznik)
+        private static void ObliczOrazWyswietlSredniaDlaTablicy(int[] tablica, int ilosc)
         {
-            // 5. 
-            for (int i = 0; i < licznik; ++i)
-            {
-                Console.WriteLine($"  [{i}] = " + tablica[i]);
-                
+            int suma;
+            suma = 0;
 
+            // 5. 
+            for (int pozycja = 0; pozycja < ilosc; ++pozycja)
+            {
+                Console.WriteLine($"  [{pozycja}] = " + tablica[pozycja]);
+                suma = suma + tablica [pozycja];
             }
 
-
-         
-           // Console.WriteLine("TODO");     
+            if (ilosc > 0)
+            {
+                double Srednia = 1.0 * suma / ilosc;  //automatyczna konwersja typów, co znaczy że po double trzeba zadeklarować 1.0 by wymusić przecinkowość w wyświetlanej liczbie!!!
+                Console.WriteLine($"obliczona srednia wynosi {Srednia} ");
+            }
+            else
+            {
+                Console.WriteLine(" nie da sie obliczyc sredniej");
+            }                
+          
+            Console.WriteLine("obliczona suma wynosi " + suma);   
         }
 
         // 0. Potrzebne: suma oraz ilość wczytywanych liczb
