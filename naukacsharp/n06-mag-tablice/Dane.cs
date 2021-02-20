@@ -6,35 +6,35 @@ namespace n06_mag_tablice
 {
     class Dane
     {
+        public const int ROZMIAR = 20;
+
         public int LicznikTowaru = 0;
-        public string[] NazwaTowaru = new string[20];
-        public int[] StanTowaru = new int[20];
-        public double[] CenaNetto = new double[20];
-        public double[] StawkaVat = new double[20];
-        public double[] CenaBrutto = new double[20];
+        public string[] NazwaTowaru = new string[ROZMIAR];
+        public int[] StanTowaru = new int[ROZMIAR];
+        public double[] CenaNetto = new double[ROZMIAR];
+        public double[] StawkaVat = new double[ROZMIAR];
+        public double[] CenaBrutto = new double[ROZMIAR];
 
         public Dane()
         {
-            NazwaTowaru[0] = "Szczotka";
-            StanTowaru[0] = 15;
-            CenaNetto[0] = 29.99;
-            StawkaVat[0] = 23.0;
-            LicznikTowaru++;
-
-            NazwaTowaru[1] = "Grzebień";
-            StanTowaru[1] = 10;
-            CenaNetto[1] = 15.00;
-            StawkaVat[1] = 7.5;
-            LicznikTowaru++;
-
+            DodajTowar( "Szczotka", 15, 29.99, 23.0);
+            DodajTowar( "Grzebień", 10, 15.00, 7.5);
         }
         public void DodajTowar(string nazwa, int stan, double netto, double vat)
         {
-            NazwaTowaru[LicznikTowaru] = nazwa;
-            StanTowaru[LicznikTowaru] = stan;
-            CenaNetto[LicznikTowaru] = netto;
-            StawkaVat[LicznikTowaru] = vat;
-            LicznikTowaru++;
+            if (LicznikTowaru < ROZMIAR)
+            {   
+                NazwaTowaru[LicznikTowaru] = nazwa;
+                StanTowaru[LicznikTowaru] = stan;
+                CenaNetto[LicznikTowaru] = netto;
+                StawkaVat[LicznikTowaru] = vat;
+                LicznikTowaru++;
+            }
+            else
+            {
+                Console.WriteLine("Brak miejsca!");
+            }
         }
+
     }
 }
