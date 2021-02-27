@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "n04-obliczanie-sredniej", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "n05-gwiazdki", "n05-gwiazdki\n05-gwiazdki.csproj", "{6BB4F654-44F4-48F9-AE28-4E78A0FB68CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "n06-mag-tablice", "n06-mag-tablice\n06-mag-tablice.csproj", "{98EA61F3-1EF9-495E-8E08-1F864D468A8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "n06-mag-tablice", "n06-mag-tablice\n06-mag-tablice.csproj", "{98EA61F3-1EF9-495E-8E08-1F864D468A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "n07-petlawpetli", "n07-petlawpetli\n07-petlawpetli.csproj", "{5083647D-0DBB-447F-BD1F-F1959D96CFB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{98EA61F3-1EF9-495E-8E08-1F864D468A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98EA61F3-1EF9-495E-8E08-1F864D468A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98EA61F3-1EF9-495E-8E08-1F864D468A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5083647D-0DBB-447F-BD1F-F1959D96CFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5083647D-0DBB-447F-BD1F-F1959D96CFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5083647D-0DBB-447F-BD1F-F1959D96CFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5083647D-0DBB-447F-BD1F-F1959D96CFB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
