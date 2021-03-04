@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "n06-mag-tablice", "n06-mag-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "n07-petlawpetli", "n07-petlawpetli\n07-petlawpetli.csproj", "{5083647D-0DBB-447F-BD1F-F1959D96CFB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "n08-mag-obiekty", "n08-mag-obiekty\n08-mag-obiekty.csproj", "{27EB583D-E619-4099-9FB6-9C0B3202FE40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "n08-mag-obiekty", "n08-mag-obiekty\n08-mag-obiekty.csproj", "{27EB583D-E619-4099-9FB6-9C0B3202FE40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "n09-mag-gui", "n09-mag-gui\n09-mag-gui.csproj", "{2B4EBE30-68F9-4F9B-BD8B-9D298C99257B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{27EB583D-E619-4099-9FB6-9C0B3202FE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27EB583D-E619-4099-9FB6-9C0B3202FE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27EB583D-E619-4099-9FB6-9C0B3202FE40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B4EBE30-68F9-4F9B-BD8B-9D298C99257B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4EBE30-68F9-4F9B-BD8B-9D298C99257B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4EBE30-68F9-4F9B-BD8B-9D298C99257B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4EBE30-68F9-4F9B-BD8B-9D298C99257B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
